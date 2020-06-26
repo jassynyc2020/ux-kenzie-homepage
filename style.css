@@ -1,8 +1,11 @@
+/* Mobile style */
+/* Base styles --------------------->*/
 body {
   font-family: "Nunito", sans-serif;
 }
 
-h1, h2 {
+h1,
+h2 {
   text-align: center;
 }
 
@@ -21,34 +24,33 @@ nav {
   align-items: flex-end;
 }
 
-nav li {
+.navbar > li {
   display: inline-block;
   margin-top: 0;
-  margin-right: .90rem;
-  margin-left: .90rem;
+  margin-right: 0.9rem;
+  margin-left: 0.9rem;
   margin-bottom: 0;
   text-decoration: underline;
 }
 
-.schedule-button {
+.schedule-button,
+.chat-description form input[type="submit"] {
   background-color: blue;
   text-decoration: none;
   color: white;
-  padding: 0.5em;
-  border-radius: 5%;
   width: 8em;
   text-align: center;
   display: inline-block;
+  padding: 0.5em;
+}
+
+.schedule-button {
+  border-radius: 5%;
 }
 
 .chat-description form input[type="submit"] {
   border: none;
-  background-color: blue;
-  text-decoration: none;
-  color: white;
   padding: 0.5em;
   border-radius: 10%;
-  width: 8em;
-  text-align: center;
   display: inline-block;
 }
