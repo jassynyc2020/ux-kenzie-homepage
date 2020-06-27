@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Kenzie Academy</title>
     <meta name="author" content="Chok Ooi" />
     <meta
@@ -25,46 +26,64 @@
   </head>
   <body>
     <header>
-      <nav>
-        <ul class="navbar">
-          <li><a href="#">Admissions</a></li>
-          <li><a href="#">Programs</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a class="schedule-button" href="#">Schedule a Tour</a></li>
+      <nav class="nav-section container">
+        <ul class="nav-list">
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#">Admissions</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#">Programs</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#">Pricing</a>
+          </li>
+          <li>
+            <a class="schedule-button new-list__item" href="#"
+              >Schedule a Tour</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
-    <section class="hero-title">
-      <h1 style="line-height: 0; color: red;">Design your tech career</h1>
-      <h2>
-        Kenzie Academy is a two-year learning track and apprenticeship program.
-      </h2>
-      <iframe class="hero-video"
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/FqVHe2BGdEw"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
+
+    <section>
+      <div class="hero-main-top-heading">
+        <h1 class="hero-title">Design your tech career</h1>
+        <h2 class="hero-description">
+          Kenzie Academy is a two-year learning track and apprenticeship program
+        </h2>
+
+        <iframe
+          class="hero-video"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/FqVHe2BGdEw"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
     </section>
-
-    <section class="chat-description">
-      <h3>Let's Chat.</h3>
-      <p>
-        Kenzie Academy is no small commitment. If we've piqued your interest
-        today, we'd love to keep the conversation going.
-      </p>
-
-      <form>
-        <div class="contact-form">
-          <input placeholder="First Name" />
-          <input placeholder="Last Name" />
-        </div>
-        <input placeholder="Email" />
-        <input placeholder="Phone" />
-        <input type="submit" />
-      </form>
+    <section class="chat-contact-container">
+      <section class="chat container">
+        <h3 class="chat-heading">Let's Chat.</h3>
+        <p class="chat-description">
+          Kenzie Academy is no small commitment. If we've piqued your interest
+          today, we'd love to keep the conversation going.
+        </p>
+        <form class="contact container">
+          <div class="contact-form-name-phone">
+            <input class="contact-form__first-name" placeholder="First Name" />
+            <input class="contact-form__last-name" placeholder="Last Name" />
+          </div>
+          <div class="contact-form-email-phone">
+            <input class="email" placeholder="Email" />
+            <input class="phone" placeholder="Phone" />
+            <input class="submit" type="submit" />
+          </div>
+        </form>
+      </section>
     </section>
   </body>
 </html>
